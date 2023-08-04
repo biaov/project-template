@@ -1,0 +1,74 @@
+{
+  "name": "project-template",
+  "private": false,
+  "version": "1.0.14",
+  "author": {
+    "name": "biaov",
+    "email": "biaov@qq.com",
+    "url": "https://biaov.cn/"
+  },
+  "description": "项目初始化模板",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .ts,.tsx ./src --fix",
+    "ncu": "ncu --configFileName .ncurc.json && npm i"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "Project",
+    "Template",
+    "TypeScript",
+    "Vue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/biaovorg/project-template/tree/react"
+  },
+  "homepage": "https://gitee.com/biaovorg/project-template/tree/react",
+  "bugs": {
+    "url": "https://gitee.com/biaovorg/project-template/issues"
+  },
+  "publishConfig": {},
+  "license": "ISC",
+  "contributors": [
+    {
+      "name": "biaov",
+      "email": "biaov@qq.com"
+    }
+  ],
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "antd": "^5.8.1",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.14.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.7",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "@vitejs/plugin-react": "^4.0.4",
+    "eslint": "^8.46.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "less": "^4.1.3",
+    "prettier": "^3.0.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.8",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}
