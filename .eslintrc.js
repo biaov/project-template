@@ -8,7 +8,7 @@ const config = {
     'vue/setup-compiler-macros': true
   },
   globals: {},
-  extends: ['plugin:vue/vue3-essential', 'airbnb-base', 'plugin:prettier/recommended'],
+  extends: ['plugin:vue/vue3-essential', 'airbnb-base', 'plugin:prettier/recommended', './types/.eslintrc-auto-import.json'],
   parserOptions: {
     ecmaVersion: 14,
     parser: '@typescript-eslint/parser',

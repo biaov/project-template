@@ -1,6 +1,4 @@
-import { ref } from 'vue'
 import { message, Form } from 'ant-design-vue'
-import { useRouter } from 'vue-router'
 import { shortChainApi } from '@/api/short-chain'
 import { Pagination } from '@/composables/types'
 import { TableItem, TableData } from './types'

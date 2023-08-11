@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { useRoute } from 'vue-router'
 import { analyApi } from '@/api/analy'
 
 const { link } = useRoute().params
