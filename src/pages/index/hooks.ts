@@ -1,4 +1,3 @@
-import { ref } from 'vue'
 import { useStore } from '@/stores'
 import { newVersionApi } from '@/api/public'
 import { PackageInfo } from './types'
