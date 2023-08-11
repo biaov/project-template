@@ -70,6 +70,8 @@ npm run build:%PLATFORM%
 - `less`: CSS 预编译器
 - `prettier`: 代码格式化
 - `typescript`: 编程语言
+- `unplugin-auto-import`: 自动引入模块，主要用于全局模块，如 `vue`
+- `unplugin-vue-components`: 自动引入并注册组件，主要用于全局组件，如 `src/components`
 - `vite`: 项目构建工具
 - `vite-plugin-eslint`: 将 ESlint 集成到 Vite 中
 
