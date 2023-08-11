@@ -1,5 +1,3 @@
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
 import { useStore } from '@/stores'
 import { newVersionApi } from '@/api/public'
 import { PackageInfo } from './types'
