@@ -7,7 +7,7 @@
 - 关于 `React` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/react"><img src="https://img.shields.io/badge/version-v1.0.15-blue" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/react"><img src="https://img.shields.io/badge/version-v1.0.17-blue" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/react/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/react/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" /></a>
 </h2>
@@ -64,7 +64,7 @@ npm run build
 - `eslint-plugin-react`: 检测和修复 react 代码,
 - `eslint-plugin-react-hooks`: 检测和修复 react-hooks 代码,
 - `less`: CSS 预编译器
-  "prettier": "^2.8.8",
+- `prettier`: 代码格式化
 - `typescript`: 编程语言
 - `vite`: 项目构建工具
 - `vite-plugin-eslint`: 将 ESlint 集成到 Vite 中

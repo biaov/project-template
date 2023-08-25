@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.0.15",
+  "version": "1.0.17",
   "author": {
     "name": "biaov",
     "email": "biaov@qq.com",
@@ -43,7 +43,7 @@
   ],
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
-    "antd": "^5.8.3",
+    "antd": "^5.8.4",
     "axios": "^1.4.0",
     "dayjs": "^1.11.9",
     "react": "^18.2.0",
@@ -52,22 +52,22 @@
     "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.9",
-    "@types/react": "^18.2.20",
+    "@types/node": "^20.5.6",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.3.0",
-    "@typescript-eslint/parser": "^6.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
     "@vitejs/plugin-react": "^4.0.4",
-    "eslint": "^8.46.0",
+    "eslint": "^8.47.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "less": "^4.2.0",
-    "prettier": "^3.0.1",
-    "typescript": "^5.1.6",
+    "prettier": "^3.0.2",
+    "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vite-plugin-eslint": "^1.8.1"
   }
