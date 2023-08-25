@@ -7,7 +7,7 @@
 - 关于 `uni-app` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/uni-app"><img src="https://img.shields.io/badge/version-v1.1.0-blue" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/uni-app"><img src="https://img.shields.io/badge/version-v1.1.2-blue" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/uni-app/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/uni-app/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" /></a>
 </h2>

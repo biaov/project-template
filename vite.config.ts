@@ -13,7 +13,6 @@ export default defineConfig({
     autoImport({
       imports: ['vue', { '@dcloudio/uni-app': ['onShow', 'onLaunch', 'onHide', 'onLoad'] }],
       ignore: ['types.ts'],
-      dirs: ['./src/composables'],
       dts: './types/auto-imports.d.ts',
       eslintrc: {
         enabled: true,
