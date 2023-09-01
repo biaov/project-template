@@ -7,7 +7,7 @@
 - 关于 `Node` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/node"><img src="https://img.shields.io/badge/version-v1.1.8-blue" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/node"><img src="https://img.shields.io/badge/version-v1.1.9-blue" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/node/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" /></a>
 </h2>
 
