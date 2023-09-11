@@ -2,12 +2,20 @@
 
 项目初始化模板
 
+## 分支命名规则
+
+- 主分支：`vue`, `uni-app`, `react`, `node`, `electron`
+  - 各个主分支代表着不同的项目模板
+- 开发分支
+  - 功能分支：`feature/主分支/时间/功能名称`, 如 `feature/vue/20230901/demo`
+  - BUG 修复分支：`hotfix/主分支/时间/功能名称`, 如 `hotfix/vue/20230901/demo`
+
 ## uni-app
 
 - 关于 `uni-app` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/uni-app"><img src="https://img.shields.io/badge/version-v1.1.2-blue" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/uni-app"><img src="https://img.shields.io/badge/version-v1.1.4-blue" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/uni-app/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/uni-app/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" /></a>
 </h2>
