@@ -1,4 +1,6 @@
-// 分页
+/**
+ * 分页
+ */
 export type Pagination = {
   showSizeChanger: boolean
   showQuickJumper: boolean

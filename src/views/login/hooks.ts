@@ -7,7 +7,9 @@ export const useHandle = () => {
   const router = useRouter()
   const store = useStore()
 
-  // 提交
+  /**
+   * 提交
+   */
   const onSubmit = () => {
     store.login({ token: 'token' })
     router.push({ name: 'dashboard' })
