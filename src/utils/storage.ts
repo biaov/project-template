@@ -1,39 +1,53 @@
 import { StorageType } from './types'
 
-// storage 类型值
+/**
+ * storage 类型值
+ */
 enum StorageTypeValue {
   Local = 'local',
   Session = 'session'
 }
 
-// 设置临时缓存
+/**
+ * 设置临时缓存
+ */
 const setSessionStorage = (key: string, value: unknown) => {
   sessionStorage.setItem(`$-${key}`, JSON.stringify({ value }))
 }
 
-// 获取临时缓存
+/**
+ * 获取临时缓存
+ */
 const getSessionStorage = (key: string): unknown => {
   const storage = sessionStorage.getItem(`$-${key}`)
   return storage ? JSON.parse(storage).value : ''
 }
 
-// 移除临时缓存
+/**
+ * 移除临时缓存
+ */
 const removeSessionStorage = (key: string) => {
   sessionStorage.removeItem(`$-${key}`)
 }
 
-// 设置永久缓存
+/**
+ * 设置永久缓存
+ */
 const setLocalStorage = (key: string, value: unknown) => {
   localStorage.setItem(`$-${key}`, JSON.stringify({ value }))
 }
 
-// 获取永久缓存
+/**
+ * 获取永久缓存
+ */
 const getLocalStorage = (key: string): unknown => {
   const storage = localStorage.getItem(`$-${key}`)
   return storage ? JSON.parse(storage).value : ''
 }
 
-// 移除永久缓存
+/**
+ * 移除永久缓存
+ */
 const removeLocalStorage = (key: string) => {
   localStorage.removeItem(`$-${key}`)
 }

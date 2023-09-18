@@ -10,13 +10,17 @@ export default defineConfig({
     port: 8090
   },
   resolve: {
-    // 路径别名
+    /**
+     * 路径别名
+     */
     alias: {
       '@': resolve(__dirname, './src')
     }
   },
   css: {
-    // 配置预编译器
+    /**
+     * 配置预编译器
+     */
     preprocessorOptions: {
       less: {
         additionalData: `@import '@/styles/variable.less';`

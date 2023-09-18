@@ -1,11 +1,19 @@
 import axios, { AxiosRequestConfig, Canceler } from 'axios'
 import { baseURL } from '@/config'
 
-const pendingAjax: string[] = [] // 等待请求
+/**
+ * 等待请求
+ */
+const pendingAjax: string[] = []
 const { CancelToken } = axios
-const cacelKey = 'requesting' // 请求 key
+/**
+ * 请求 key
+ */
+const cacelKey = 'requesting'
 
-// 移除等待请求
+/**
+ * 移除等待请求
+ */
 const removePendingAjax = (config: AxiosRequestConfig<any>, cancel?: Canceler) => {
   const params = typeof config.params === 'string' ? config.params : JSON.stringify(config.params)
   const data = typeof config.data === 'string' ? config.data : JSON.stringify(config.data)
@@ -19,16 +27,23 @@ const removePendingAjax = (config: AxiosRequestConfig<any>, cancel?: Canceler) =
   }
 }
 
-// 创建 axios 实例
+/**
+ * 创建 axios 实例
+ */
 export const service = axios.create({
   baseURL: baseURL,
-  timeout: 10000, // 请求超时时间
+  /**
+   * 请求超时时间
+   */
+  timeout: 10000,
   headers: {
     'Content-Type': 'application/json'
   }
 })
 
-// request 请求拦截器
+/**
+ * request 请求拦截器
+ */
 service.interceptors.request.use(
   config => {
     // 添加取消 key
@@ -42,7 +57,9 @@ service.interceptors.request.use(
   }
 )
 
-// respone 响应拦截器
+/**
+ * respone 响应拦截器
+ */
 service.interceptors.response.use(
   response => {
     removePendingAjax(response.config)
