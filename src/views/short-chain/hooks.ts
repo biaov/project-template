@@ -3,10 +3,14 @@ import { shortChainApi } from '@/api/short-chain'
 import { Pagination } from '@/composables/types'
 import { TableItem, TableData } from './types'
 
-// 表格列表
+/**
+ * 表格列表
+ */
 export const useTable = () => {
   const router = useRouter()
-  // 表格数据
+  /**
+   * 表格数据
+   */
   const tableData = ref<TableData>({
     list: [],
     total: 100,
@@ -14,7 +18,9 @@ export const useTable = () => {
     current: 1
   })
 
-  // 加载表格数据
+  /**
+   * 加载表格数据
+   */
   const loadTableData = async () => {
     const { pageSize, current } = tableData.value
     const { list, meta } = await shortChainApi.paging({ pageSize, current })
@@ -26,21 +32,27 @@ export const useTable = () => {
   }
   loadTableData()
 
-  // 删除操作
+  /**
+   * 删除操作
+   */
   const handleDelete = async ({ id }: TableItem) => {
     await shortChainApi.delete(id)
     message.success('删除成功')
     loadTableData()
   }
 
-  // 操作 page
+  /**
+   * 操作 page
+   */
   const handlePage = ({ current, pageSize }: Pagination) => {
     tableData.value.current = current
     tableData.value.pageSize = pageSize
     loadTableData()
   }
 
-  // 点击新增
+  /**
+   * 点击新增
+   */
   const onAdd = () => {
     router.push({ name: 'short-chain-add' })
   }
@@ -48,10 +60,14 @@ export const useTable = () => {
   return { tableData, handleDelete, handlePage, onAdd }
 }
 
-// 新增/修改表单
+/**
+ * 新增/修改表单
+ */
 export const useForm = () => {
   const router = useRouter()
-  // 表单
+  /**
+   * 表单
+   */
   const formState = ref({
     content: ''
   })

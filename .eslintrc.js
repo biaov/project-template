@@ -1,5 +1,7 @@
 const developmentOff = process.env.NODE_ENV === 'development' ? 'off' : 'error'
-// 配置信息
+/**
+ * 配置信息
+ */
 const config = {
   env: {
     browser: true,

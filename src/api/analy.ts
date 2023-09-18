@@ -1,3 +1,6 @@
 import { command } from './factory'
 
-export const analyApi = command('short-chain') // 短链
+/**
+ * 短链
+ */
+export const analyApi = command('short-chain')
