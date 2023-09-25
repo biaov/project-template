@@ -15,7 +15,7 @@
 - 关于 `uni-app` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/uni-app"><img src="https://img.shields.io/badge/version-v1.1.5-blue" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/uni-app"><img src="https://img.shields.io/badge/version-v1.2.0-blue" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/uni-app/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/uni-app/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" /></a>
 </h2>
@@ -54,7 +54,6 @@ npm run build:%PLATFORM%
 - `@dcloudio/uni-app-plus`: 解析成 APP
 - `@dcloudio/uni-components`: uni-app 组件库
 - `@dcloudio/uni-h5`: 解析成 H5
-- `@dcloudio/uni-mp-alipay`: 解析成支付宝小程序
 - `@dcloudio/uni-mp-weixin`: 解析成微信小程序
 - `dayjs`: 时间处理工具
 - `pinia`: 状态管理器
@@ -88,5 +87,5 @@ npm run build:%PLATFORM%
 [![贡献者们](https://contrib.rocks/image?repo=biaov/project-template)](https://github.com/biaov/project-template/graphs/contributors)
 
 <!--
-npm i @dcloudio/uni-app@vue3 @dcloudio/uni-app-plus@vue3 @dcloudio/uni-components@vue3 @dcloudio/uni-h5@vue3 @dcloudio/uni-mp-alipay@vue3 @dcloudio/uni-mp-kuaishou@vue3 @dcloudio/uni-mp-weixin@vue3 @dcloudio/uni-automator@vue3 @dcloudio/uni-cli-shared@vue3 @dcloudio/uni-stacktracey@vue3 @dcloudio/vite-plugin-uni@vue3
+npm i @dcloudio/uni-app@vue3 @dcloudio/uni-app-plus@vue3 @dcloudio/uni-components@vue3 @dcloudio/uni-h5@vue3 @dcloudio/uni-mp-weixin@vue3 @dcloudio/uni-automator@vue3 @dcloudio/uni-cli-shared@vue3 @dcloudio/uni-stacktracey@vue3 @dcloudio/vite-plugin-uni@vue3
 -->
