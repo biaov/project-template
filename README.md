@@ -4,7 +4,7 @@
 
 ## 分支命名规则
 
-- 主分支：`vue`, `uni-app`, `react`, `node`, `electron`
+- 主分支：`vue`, `uni-app`, `react`, `node`, `node-simple`, `electron`
   - 各个主分支代表着不同的项目模板
 - 开发分支
   - 功能分支：`feature/主分支/时间/功能名称`, 如 `feature/vue/20230901/demo`
@@ -12,11 +12,11 @@
 
 ## Node
 
-- 关于 `Node` 项目的模板
+- 关于简单的 `Node` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/node"><img src="https://img.shields.io/badge/version-v1.1.11-blue" /></a>
-  <a href="https://gitee.com/biaovorg/project-template/blob/node/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/node-simple"><img src="https://img.shields.io/badge/version-v1.0.0-blue" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/blob/node-simple/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" /></a>
 </h2>
 
 ### 安装依赖
@@ -50,8 +50,6 @@ npm run build
 ### 依赖特性
 
 - `express`: Node 开发框架
-- `mysql2`: mysql 数据库
-- `sequelize`: 一个基于 promise 的 Node.js ORM 工具
 - `@types/express`: `express` 的类型
 - `@types/node`: `node` 的类型
 - `terser`: 压缩代码
