@@ -33,7 +33,7 @@ const config: UserConfig = {
       formats: ['cjs']
     },
     rollupOptions: {
-      external: ['path', 'child_process', 'fs', 'sequelize', 'express'],
+      external: ['path', 'child_process', 'fs', 'express'],
       output: {
         entryFileNames: '[name].js'
       }
