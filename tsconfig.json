@@ -3,8 +3,6 @@
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
-    "moduleResolution": "node",
-    "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
@@ -12,9 +10,17 @@
     "lib": ["esnext", "dom"],
     "types": ["@dcloudio/types"],
     "baseUrl": "./",
+
+    /* 模块解析方式 */
+    "moduleResolution": "Bundler",
+
+    /* 路径别名 */
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+
+    /* lint 检查 */
+    "strict": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "types/**/*.d.ts"]
 }
