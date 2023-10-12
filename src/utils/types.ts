@@ -1,4 +1,8 @@
 /**
- * storage 类型
+ * 日志 API
  */
-export type StorageType = 'session' | 'local'
+export interface LogAags {
+  text: string
+  prefix?: string
+}
+

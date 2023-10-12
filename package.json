@@ -1,39 +1,49 @@
 {
-  "name": "project-template",
+  "name": "project-template-cli",
   "private": false,
-  "version": "1.1.6",
+  "version": "1.0.0",
+  "exports": "./dist/index.js",
+  "main": "./dist/index.js",
+  "type": "module",
+  "bin": {
+    "project-template-cli": "bin/project-template-cli.js",
+    "cli": "bin/project-template-cli.js"
+  },
   "author": {
     "name": "biaov",
     "email": "biaov@qq.com",
-    "url": "https://biaov.cn/"
+    "url": "https://biaov.cn"
   },
-  "description": "项目初始化模板",
+  "description": "关于脚手架项目初始化模板",
   "scripts": {
     "start": "npm run dev",
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview",
-    "lint": "eslint --fix ./src --ext .vue,.ts",
-    "ncu": "ncu --configFileName .ncurc.json && npm i"
+    "dev": "npm run build -- --watch",
+    "build": "node scripts/build && vite build",
+    "prettier": "prettier --write '**/*.{js,ts,md,json}'",
+    "ncu": "ncu --configFileName .ncurc.json && npm i",
+    "pre-publish": "start cmd /k cd ./dist"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "engines": {
     "node": ">=16"
   },
   "keywords": [
-    "Project",
-    "Template",
-    "TypeScript",
-    "Vue"
+    "cli",
+    "init",
+    "vite",
+    "typescript",
+    "template"
   ],
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/biaovorg/project-template/tree/vue"
+    "url": "https://github.com/biaov/project-template.git"
   },
-  "homepage": "https://gitee.com/biaovorg/project-template/tree/vue",
+  "homepage": "https://github.com/biaov/project-template.git",
   "bugs": {
-    "url": "https://gitee.com/biaovorg/project-template/issues"
+    "url": "https://github.com/biaov/project-template/issues"
   },
-  "publishConfig": {},
   "license": "ISC",
   "contributors": [
     {
@@ -42,34 +52,17 @@
     }
   ],
   "dependencies": {
-    "@ant-design/icons-vue": "^7.0.0",
-    "ant-design-vue": "^4.0.3",
-    "axios": "^1.5.0",
-    "dayjs": "^1.11.10",
-    "nprogress": "^0.2.0",
-    "pinia": "^2.1.6",
-    "vue": "^3.3.4",
-    "vue-router": "^4.2.5"
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "log-symbols": "^5.1.0",
+    "ora": "^7.0.1",
+    "update-notifier": "^6.0.2"
   },
   "devDependencies": {
-    "@types/node": "^20.6.5",
-    "@types/nprogress": "^0.2.1",
-    "@typescript-eslint/eslint-plugin": "^6.7.2",
-    "@typescript-eslint/parser": "^6.7.2",
-    "@vitejs/plugin-vue": "^4.3.4",
-    "eslint": "^8.50.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-vue": "^9.17.0",
-    "less": "^4.2.0",
+    "@types/node": "^20.8.4",
+    "@types/update-notifier": "^6.0.5",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
-    "unplugin-auto-import": "^0.16.6",
-    "unplugin-vue-components": "^0.25.2",
-    "vite": "^4.4.9",
-    "vite-plugin-eslint": "^1.8.1",
-    "vue-tsc": "^1.8.13"
+    "vite": "^4.4.11"
   }
 }
