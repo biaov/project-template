@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.1.12",
+  "version": "1.1.13",
   "main": "./dist/resources/app/main/index.cjs",
   "author": {
     "name": "biaov",
@@ -47,7 +47,7 @@
     }
   ],
   "dependencies": {
-    "@ant-design/icons-vue": "^7.0.0",
+    "@ant-design/icons-vue": "^7.0.1",
     "ant-design-vue": "^4.0.3",
     "axios": "^1.5.1",
     "dayjs": "^1.11.10",
@@ -57,7 +57,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@types/node": "^20.8.3",
+    "@types/node": "^20.8.4",
     "@types/nprogress": "^0.2.1",
     "@vitejs/plugin-vue": "^4.4.0",
     "electron": "25.1.1",
@@ -65,6 +65,6 @@
     "less": "^4.2.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.11",
-    "vue-tsc": "^1.8.16"
+    "vue-tsc": "^1.8.19"
   }
 }
