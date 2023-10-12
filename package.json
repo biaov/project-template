@@ -1,5 +1,5 @@
 {
-  "name": "project-template-cli",
+  "name": "project-template",
   "private": false,
   "version": "1.0.0",
   "exports": "./dist/index.js",
@@ -14,7 +14,7 @@
     "email": "biaov@qq.com",
     "url": "https://biaov.cn"
   },
-  "description": "关于脚手架项目初始化模板",
+  "description": "项目初始化模板",
   "scripts": {
     "start": "npm run dev",
     "dev": "npm run build -- --watch",
