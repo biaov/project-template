@@ -3,8 +3,6 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -14,9 +12,17 @@
     "skipLibCheck": true,
     "noEmit": true,
     "baseUrl": "./",
+
+    /* 路径别名 */
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+
+    /* 解析模式 */
+    "moduleResolution": "Bundler",
+
+    /* lint */
+    "strict": true
   },
   "include": ["src/**/*.ts", "src/**/*.vue", "types/**/*.d.ts"]
 }
