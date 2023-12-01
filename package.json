@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.2.6",
+  "version": "1.2.7",
   "scripts": {
     "start": "npm run dev:h5",
     "dev:app": "uni -p app",
@@ -20,7 +20,7 @@
   },
   "description": "项目初始化模板",
   "engines": {
-    "node": ">=16"
+    "node": ">=20"
   },
   "keywords": [
     "Project",
@@ -46,38 +46,38 @@
     }
   ],
   "dependencies": {
-    "@dcloudio/uni-app": "^3.0.0-alpha-3090820231116002",
-    "@dcloudio/uni-app-plus": "^3.0.0-alpha-3090820231116002",
-    "@dcloudio/uni-components": "^3.0.0-alpha-3090820231116002",
-    "@dcloudio/uni-h5": "^3.0.0-alpha-3090820231116002",
-    "@dcloudio/uni-mp-weixin": "^3.0.0-alpha-3090820231116002",
+    "@dcloudio/uni-app": "^3.0.0-alpha-3090920231127001",
+    "@dcloudio/uni-app-plus": "^3.0.0-alpha-3090920231127001",
+    "@dcloudio/uni-components": "^3.0.0-alpha-3090920231127001",
+    "@dcloudio/uni-h5": "^3.0.0-alpha-3090920231127001",
+    "@dcloudio/uni-mp-weixin": "^3.0.0-alpha-3090920231127001",
     "dayjs": "^1.11.10",
     "pinia": "^2.0.36",
-    "vue": "^3.3.8",
-    "vue-i18n": "^9.7.0"
+    "vue": "^3.3.9",
+    "vue-i18n": "^9.8.0"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.3",
-    "@dcloudio/uni-automator": "^3.0.0-alpha-3090820231116002",
-    "@dcloudio/uni-cli-shared": "^3.0.0-alpha-3090820231116002",
-    "@dcloudio/uni-stacktracey": "^3.0.0-alpha-3090820231116002",
-    "@dcloudio/vite-plugin-uni": "^3.0.0-alpha-3090820231116002",
-    "@types/node": "^20.9.1",
-    "@typescript-eslint/eslint-plugin": "^6.11.0",
-    "@typescript-eslint/parser": "^6.11.0",
-    "@vitejs/plugin-vue": "^4.5.0",
-    "eslint": "^8.53.0",
+    "@dcloudio/uni-automator": "^3.0.0-alpha-3090920231127001",
+    "@dcloudio/uni-cli-shared": "^3.0.0-alpha-3090920231127001",
+    "@dcloudio/uni-stacktracey": "^3.0.0-alpha-3090920231127001",
+    "@dcloudio/vite-plugin-uni": "^3.0.0-alpha-3090920231127001",
+    "@types/node": "^20.10.1",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "@vitejs/plugin-vue": "^4.5.1",
+    "eslint": "^8.54.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-vue": "^9.18.1",
+    "eslint-plugin-vue": "^9.19.2",
     "less": "^4.2.0",
     "prettier": "^3.1.0",
-    "typescript": "^5.2.2",
-    "unplugin-auto-import": "^0.16.7",
+    "typescript": "^5.3.2",
+    "unplugin-auto-import": "^0.17.1",
     "unplugin-vue-components": "^0.25.2",
-    "vite": "^5.0.0",
+    "vite": "^5.0.4",
     "vite-plugin-eslint": "^1.8.1"
   }
 }
