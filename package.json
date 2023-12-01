@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.1.17",
+  "version": "1.1.18",
   "main": "./dist/resources/app/main/index.cjs",
   "author": {
     "name": "biaov",
@@ -21,7 +21,7 @@
     "ncu": "ncu --configFileName .ncurc.json && npm i"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=20"
   },
   "keywords": [
     "Project",
@@ -53,18 +53,18 @@
     "dayjs": "^1.11.10",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
-    "vue": "^3.3.8",
+    "vue": "^3.3.9",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@types/node": "^20.9.1",
+    "@types/node": "^20.10.1",
     "@types/nprogress": "^0.2.3",
-    "@vitejs/plugin-vue": "^4.5.0",
+    "@vitejs/plugin-vue": "^4.5.1",
     "electron": "25.1.1",
     "electron-builder": "24.4.0",
     "less": "^4.2.0",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.0",
-    "vue-tsc": "^1.8.22"
+    "typescript": "^5.3.2",
+    "vite": "^5.0.4",
+    "vue-tsc": "^1.8.24"
   }
 }
