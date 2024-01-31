@@ -15,9 +15,9 @@
 - 关于 `React` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/react"><img src="https://img.shields.io/badge/version-v1.0.28-blue" /></a>
-  <a href="https://gitee.com/biaovorg/project-template/blob/react/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" /></a>
-  <a href="https://gitee.com/biaovorg/project-template/blob/react/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/react"><img src="https://img.shields.io/badge/version-v1.0.29-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/blob/react/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/blob/react/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" alt="eslint" /></a>
 </h2>
 
 ### 安装依赖
