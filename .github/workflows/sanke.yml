@@ -35,4 +35,3 @@ jobs:
                 await github.rest.pulls.merge({ ...option, pull_number: prData.number })
               }
             })
-
