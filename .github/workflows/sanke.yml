@@ -5,7 +5,7 @@ on:
     - cron: '0 17 * * *'
   push:
     branches:
-      - main
+      - vue
 jobs:
   generate:
     permissions: write-all
