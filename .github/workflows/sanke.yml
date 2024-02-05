@@ -28,7 +28,7 @@ jobs:
             const option = { owner, repo }
             const { data: branchData } = await github.rest.repos.listBranches({ ...option })
             branchData.forEach(async ({ name }) => {
-              const result = name.match(/^feature\/.+\//)
+              const result = name.match(/^feature\/[a-z-]+\//)
               if (result && result[0]) {
                 const mainName = result[0].slice(8, -1)
                 const { data: prData } = await github.rest.pulls.create({ ...option, title: `自动创建 PR`, head: `biaov:${name}`, base: mainName, body: `自动创建 PR` })
