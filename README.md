@@ -15,7 +15,7 @@
 - 关于 `electron` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/electron"><img src="https://img.shields.io/badge/version-v1.1.20-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/electron"><img src="https://img.shields.io/badge/version-v1.1.21-blue" alt="版本" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/electron/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
 </h2>
 
