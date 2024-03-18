@@ -1,10 +1,45 @@
 import { defineConfig } from 'vite'
+import type { InlineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
+import electron from 'vite-plugin-electron/simple'
+import { removeReleaseDir } from './build/remove-release-dir'
+
+const sameViteConfig: InlineConfig = {
+  resolve: {
+    /**
+     * 路径别名
+     */
+    alias: {
+      '@': resolve(__dirname, './src'),
+      '~': resolve(__dirname, './electron')
+    }
+  }
+}
+
+const electronBuild: InlineConfig = {
+  build: {
+    outDir: 'dist/resources/electron'
+  }
+}
 
 export default defineConfig({
   base: './',
-  plugins: [vue()],
+  plugins: [vue(),electron({
+    main: {
+      entry: 'electron/main.ts',
+      vite: {
+        ...sameViteConfig,
+        ...electronBuild
+      }
+    },
+    preload: {
+      input: resolve(__dirname, 'electron/preload.ts'),
+      vite: electronBuild
+    },
+    renderer: {}
+  }),
+  removeReleaseDir()],
   server: {
     host: '0.0.0.0',
     port: 8090
@@ -28,7 +63,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: './dist/resources/vue',
+    outDir: 'dist/resources/vue',
     sourcemap: false,
     rollupOptions: {
       output: {
