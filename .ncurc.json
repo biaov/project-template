@@ -1,4 +1,4 @@
 {
   "upgrade": true,
-  "reject": ["pinia", "@dcloudio/uni-components", "@dcloudio/vite-plugin-uni"]
+  "reject": ["pinia", "@dcloudio/uni-components", "@dcloudio/vite-plugin-uni", "vite", "@vitejs/plugin-vue"]
 }
