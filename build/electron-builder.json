@@ -1,0 +1,44 @@
+{
+  "appId": "project.template.app",
+  "asar": true,
+  "copyright": "Copyright (c) 2022-present biaov",
+  "productName": "project-template",
+  "directories": {
+    "output": "dist/release/${version}"
+  },
+  "files": ["dist/resources"],
+  "mac": {
+    "target": ["dmg"],
+    "artifactName": "${productName}-mac-${version}-installer.${ext}"
+  },
+  "win": {
+    "icon": "electron/assets/256x256.ico",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "artifactName": "${productName}-windows-${version}-installer.${ext}",
+    "verifyUpdateCodeSignature": false,
+    "publisherName": "biaov"
+  },
+  "nsis": {
+    "allowElevation": true,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "installerIcon": "electron/assets/256x256.ico",
+    "uninstallerIcon": "electron/assets/256x256.ico",
+    "installerHeaderIcon": "electron/assets/256x256.ico",
+    "uninstallDisplayName": "uninstall",
+    "oneClick": false,
+    "deleteAppDataOnUninstall": false,
+    "displayLanguageSelector": false,
+    "perMachine": true
+  },
+  "linux": {
+    "target": ["AppImage"],
+    "artifactName": "${productName}-linux-${version}-installer.${ext}"
+  }
+}

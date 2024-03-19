@@ -1,5 +1,6 @@
-import { isDevelopment } from './env'
-import { CreateServeParam } from './types'
+import { resolve } from 'path'
+import { isDevelopment } from '~/config/env'
+import { CreateServeParam } from '~/types'
 
 export const createServer = ({ window, path = '' }: CreateServeParam) => {
   let pageUrl: string // 页面路径
@@ -9,7 +10,7 @@ export const createServer = ({ window, path = '' }: CreateServeParam) => {
     pageUrl = 'http://localhost:8090'
     window.webContents.openDevTools()
   } else {
-    pageUrl = new URL('../../resources/vue/index.html', `file://${__dirname}`).toString() // 打包
+    pageUrl = new URL(resolve(__dirname, '../vue/index.html'), `file://${__dirname}`).toString()
   }
   window.loadURL(pageUrl + path)
 }
