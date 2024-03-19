@@ -1,6 +1,6 @@
 import { app, screen, Point, shell, IpcMainInvokeEvent, BrowserWindow, dialog, OpenDialogOptions } from 'electron'
-import packageJson from '../../../package.json'
-import { AboutActionReturn, FnReturn } from './types'
+import packageJson from '../../package.json'
+import { AboutActionReturn, FnReturn } from '~/types'
 
 /**
  * 主进程操作

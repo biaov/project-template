@@ -1,5 +1,5 @@
 import { ipcMain, app } from 'electron'
-import { HandleChannelItem, CurIpcMain } from './types'
+import { HandleChannelItem, CurIpcMain } from '~/types'
 import { useActions } from './hooks'
 
 // icp 程序

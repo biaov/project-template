@@ -1,9 +1,9 @@
 {
   "id": "3462573",
-  "name": "mine-desktop",
+  "name": "project-template",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
-  "description": "关于 mine-desktop 项目的图标",
+  "description": "关于 project-template 项目的图标",
   "glyphs": [
     {
       "icon_id": "5127359",

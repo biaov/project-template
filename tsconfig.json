@@ -1,28 +1,33 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "esnext",
     "useDefineForClassFields": true,
-    "module": "ESNext",
-    "jsx": "preserve",
+    "module": "esnext",
+    "lib": ["esnext", "DOM", "DOM.Iterable"],
+    "types": ["vite/client", "node"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "esModuleInterop": true,
-    "lib": ["ESNext", "DOM"],
-    "types": ["node"],
-    "skipLibCheck": true,
     "noEmit": true,
-    "baseUrl": "./",
+    "jsx": "preserve",
 
-    /* 模块解析方式 */
-    "moduleResolution": "Bundler",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+
+    "baseUrl": "./",
 
     /* 路径别名 */
     "paths": {
-      "@/*": ["./src/*"]
-    },
-
-    /* lint 检查 */
-    "strict": true
+      "@/*": ["./src/*"],
+      "~/*": ["./electron/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts", "app/**/*.ts"]
+  "include": ["src/**/*.ts", "src/**/*.vue", "electron/**/*.ts"],
+  "exclude": ["node_modules"]
 }
