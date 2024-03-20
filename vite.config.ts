@@ -3,7 +3,6 @@ import type { InlineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import electron from 'vite-plugin-electron/simple'
-import { removeReleaseDir } from './build/remove-release-dir'
 
 const sameViteConfig: InlineConfig = {
   resolve: {
@@ -25,21 +24,23 @@ const electronBuild: InlineConfig = {
 
 export default defineConfig({
   base: './',
-  plugins: [vue(),electron({
-    main: {
-      entry: 'electron/main.ts',
-      vite: {
-        ...sameViteConfig,
-        ...electronBuild
-      }
-    },
-    preload: {
-      input: resolve(__dirname, 'electron/preload.ts'),
-      vite: electronBuild
-    },
-    renderer: {}
-  }),
-  removeReleaseDir()],
+  plugins: [
+    vue(),
+    electron({
+      main: {
+        entry: 'electron/main.ts',
+        vite: {
+          ...sameViteConfig,
+          ...electronBuild
+        }
+      },
+      preload: {
+        input: resolve(__dirname, 'electron/preload.ts'),
+        vite: electronBuild
+      },
+      renderer: {}
+    })
+  ],
   server: {
     host: '0.0.0.0',
     port: 8090

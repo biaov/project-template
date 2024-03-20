@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.2.1",
+  "version": "1.2.2",
   "main": "dist/resources/electron/main.js",
   "author": {
     "name": "biaov",
@@ -54,7 +54,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.28",
+    "@types/node": "^20.11.29",
     "@types/nprogress": "^0.2.3",
     "@vitejs/plugin-vue": "^5.0.4",
     "electron": "25.1.1",
