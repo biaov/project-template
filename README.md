@@ -15,7 +15,7 @@
 - 关于简单的 `Node` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/node-simple"><img src="https://img.shields.io/badge/version-v1.0.13-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/node-simple"><img src="https://img.shields.io/badge/version-v1.0.14-blue" alt="版本" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/node-simple/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
 </h2>
 
@@ -49,7 +49,12 @@ npm run build
 
 ### 依赖特性
 
+#### dependencies
+
 - `express`: Node 开发框架
+
+#### devDependencies
+
 - `@types/express`: `express` 的类型
 - `@types/node`: `node` 的类型
 - `terser`: 压缩代码
