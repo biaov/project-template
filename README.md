@@ -15,25 +15,25 @@
 - 关于 `cli` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/cli"><img src="https://img.shields.io/badge/version-v1.0.11-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/cli"><img src="https://img.shields.io/badge/version-v1.0.14-blue" alt="版本" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/cli/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
 </h2>
 
 ### 安装依赖
 
-```Basic
+```sh
 npm i
 ```
 
 ### 运行项目
 
-```Basic
+```sh
 npm start
 ```
 
 ### 打包项目
 
-```Basic
+```sh
 npm run build
 ```
 
@@ -49,11 +49,16 @@ npm run build
 
 ### 依赖特性
 
+#### dependencies
+
 - `chalk`: 字体颜色
 - `commander`: 命令
 - `log-symbols`: 图标
 - `ora`: 动画效果
 - `update-notifier`: 检查更新
+
+#### devDependencies
+
 - `@types/node`: `node` 类型
 - `@types/update-notifier`: `update-notifier` 类型
 - `prettier`: 格式化工具
