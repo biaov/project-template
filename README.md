@@ -15,26 +15,26 @@
 - 关于 `uni-app` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/uni-app"><img src="https://img.shields.io/badge/version-v1.2.14-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/uni-app"><img src="https://img.shields.io/badge/version-v1.2.15-blue" alt="版本" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/uni-app/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/uni-app/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" alt="eslint"  /></a>
 </h2>
 
 ### 安装依赖
 
-```Basic
+```sh
 npm i
 ```
 
 ### 运行项目
 
-```Basic
+```sh
 npm run dev:%PLATFORM%
 ```
 
 ### 打包项目
 
-```Basic
+```sh
 npm run build:%PLATFORM%
 ```
 
@@ -50,6 +50,8 @@ npm run build:%PLATFORM%
 
 ### 依赖特性
 
+#### dependencies
+
 - `@dcloudio/uni-app`: 一份代码编译成不同平台
 - `@dcloudio/uni-app-plus`: 解析成 APP
 - `@dcloudio/uni-components`: uni-app 组件库
@@ -59,6 +61,9 @@ npm run build:%PLATFORM%
 - `pinia`: 状态管理器
 - `vue`: 前端框架
 - `vue-i18n`: Vue 国际化
+
+#### devDependencies
+
 - `@dcloudio/types`: `dcloud` 类型声明
 - `@dcloudio/uni-automator`: 自动化测试工具
 - `@dcloudio/uni-cli-shared`: 公共函数库
