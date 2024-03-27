@@ -15,26 +15,26 @@
 - 关于 `Vue` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/vue"><img src="https://img.shields.io/badge/version-v1.1.19-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/vue"><img src="https://img.shields.io/badge/version-v1.1.20-blue" alt="版本" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/vue/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/vue/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" alt="eslint" /></a>
 </h2>
 
 ### 安装依赖
 
-```Basic
+```sh
 npm i
 ```
 
 ### 运行项目
 
-```Basic
+```sh
 npm start
 ```
 
 ### 打包项目
 
-```Basic
+```sh
 npm run build
 ```
 
@@ -50,6 +50,8 @@ npm run build
 
 ### 依赖特性
 
+#### dependencies
+
 - `@ant-design/icons-vue`: UI 框架图标
 - `ant-design-vue`: UI 框架
 - `axios`: 接口请求
@@ -58,6 +60,9 @@ npm run build
 - `pinia`: 状态管理器
 - `vue`: 前端框架
 - `vue-router`: 路由
+
+#### devDependencies
+
 - `@types/node`: `node` 的类型
 - `@types/nprogress`: `nprogress` 的类型
 - `@typescript-eslint/eslint-plugin`: 检测和修复 TS 代码
