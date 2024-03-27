@@ -15,25 +15,25 @@
 - 关于 `Node` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/node"><img src="https://img.shields.io/badge/version-v1.1.25-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/node"><img src="https://img.shields.io/badge/version-v1.1.26-blue" alt="版本" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/node/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
 </h2>
 
 ### 安装依赖
 
-```Basic
+```sh
 npm i
 ```
 
 ### 运行项目
 
-```Basic
+```sh
 npm start
 ```
 
 ### 打包项目
 
-```Basic
+```sh
 npm run build
 ```
 
@@ -49,9 +49,14 @@ npm run build
 
 ### 依赖特性
 
+#### dependencies
+
 - `express`: Node 开发框架
 - `mysql2`: mysql 数据库
 - `sequelize`: 一个基于 promise 的 Node.js ORM 工具
+
+#### devDependencies
+
 - `@types/express`: `express` 的类型
 - `@types/node`: `node` 的类型
 - `terser`: 压缩代码
