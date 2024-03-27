@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.0.35",
+  "version": "1.0.36",
   "author": {
     "name": "biaov",
     "email": "biaov@qq.com",
@@ -14,7 +14,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .ts,.tsx ./src --fix",
-    "ncu": "ncu --configFileName .ncurc.json && npm i"
+    "ncu": "ncu --configFileName .ncurc.json && auto version++ && npm i && auto git 更新依赖版本"
   },
   "engines": {
     "node": ">=20"
@@ -42,8 +42,8 @@
     }
   ],
   "dependencies": {
-    "@reduxjs/toolkit": "^2.2.1",
-    "antd": "^5.15.3",
+    "@reduxjs/toolkit": "^2.2.2",
+    "antd": "^5.15.4",
     "axios": "^1.6.8",
     "dayjs": "^1.11.10",
     "react": "^18.2.0",
@@ -52,11 +52,11 @@
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
-    "@types/node": "^20.11.28",
-    "@types/react": "^18.2.66",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.72",
     "@types/react-dom": "^18.2.22",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -67,8 +67,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "less": "^4.2.0",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.2",
-    "vite": "^5.1.6",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.6",
     "vite-plugin-eslint": "^1.8.1"
   }
 }
