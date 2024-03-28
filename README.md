@@ -15,26 +15,26 @@
 - 关于 `React` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/react"><img src="https://img.shields.io/badge/version-v1.0.35-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/react"><img src="https://img.shields.io/badge/version-v1.0.36-blue" alt="版本" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/react/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/react/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" alt="eslint" /></a>
 </h2>
 
 ### 安装依赖
 
-```Basic
+```sh
 npm i
 ```
 
 ### 运行项目
 
-```Basic
+```sh
 npm start
 ```
 
 ### 打包项目
 
-```Basic
+```sh
 npm run build
 ```
 
@@ -50,6 +50,8 @@ npm run build
 
 ### 依赖特性
 
+#### dependencies
+
 - `@reduxjs/toolkit`: Redux 工具包
 - `antd`: React UI 框架
 - `axios`: 接口请求
@@ -58,6 +60,9 @@ npm run build
 - `react-dom`: 浏览器 DOM 渲染
 - `react-redux`: 将 React 连接到 Redux 的连接器
 - `react-router-dom`: React 路由
+
+#### devDependencies
+
 - `@types/node`: `node` 的类型
 - `@types/react`: `react` 的类型
 - `@types/react-dom`: `react-dom` 的类型
