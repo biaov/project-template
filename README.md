@@ -4,7 +4,7 @@
 
 ## 分支命名规则
 
-- 主分支：`vue`, `uni-app`, `react`, `node`, `node-simple`, `electron`, `cli`
+- 主分支：`vue`, `uni-app`, `react`, `node`, `electron`, `cli`
   - 各个主分支代表着不同的项目模板
 - 开发分支
   - 功能分支：`feature/主分支/时间/功能名称`, 如 `feature/vue/20230901/demo`
@@ -15,7 +15,7 @@
 - 关于 `Vue` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/vue"><img src="https://img.shields.io/badge/version-v1.1.20-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/vue"><img src="https://img.shields.io/badge/version-v1.1.21-blue" alt="版本" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/vue/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/vue/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" alt="eslint" /></a>
 </h2>
