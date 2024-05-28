@@ -1,25 +1,27 @@
-import { UserConfig } from 'vite'
 import { resolve } from 'path'
+import { external, vitePluginCopyAssets } from './scripts'
+
+const { dirname } = import.meta
 
 /**
  * 配置文件
  */
-const config: UserConfig = {
-  root: __dirname,
+export default {
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
+      '@': resolve(dirname, './src')
     }
   },
+  plugins: [vitePluginCopyAssets()],
   build: {
-    target: 'node16',
-    outDir: resolve(__dirname, './dist/dist'),
+    target: 'node20',
+    outDir: resolve(dirname, './dist/dist'),
     lib: {
-      entry: resolve(__dirname, './src/index.ts'),
+      entry: resolve(dirname, './src/index.ts'),
       formats: ['es']
     },
     rollupOptions: {
-      external: ['update-notifier', 'url', 'path', 'child_process', 'fs', 'chalk', 'commander', 'log-symbols', 'ora'],
+      external: [...external, 'path', 'child_process', 'fs'],
       output: {
         entryFileNames: '[name].js'
       }
@@ -29,5 +31,3 @@ const config: UserConfig = {
     emptyOutDir: true
   }
 }
-
-export default config
