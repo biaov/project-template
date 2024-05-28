@@ -1,4 +1,0 @@
-{
-  "upgrade": true,
-  "reject": ["pinia", "@dcloudio/uni-components", "@dcloudio/vite-plugin-uni", "vite", "@vitejs/plugin-vue", "eslint"]
-}
