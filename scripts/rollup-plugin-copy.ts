@@ -62,7 +62,7 @@ export const copyAssets = () => {
 }
 
 export default (): PluginOption => ({
-  name: 'vite-plugin-copy-assets',
+  name: 'rollup-plugin-copy',
   closeBundle() {
     rewritePackage()
     copyAssets()

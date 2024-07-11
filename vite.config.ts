@@ -1,5 +1,6 @@
 import { resolve } from 'path'
-import { external, vitePluginCopyAssets } from './scripts'
+import external from './scripts/external'
+import rollupPluginCopy from './scripts/rollup-plugin-copy'
 
 const { dirname } = import.meta
 
@@ -12,7 +13,6 @@ export default {
       '@': resolve(dirname, './src')
     }
   },
-  plugins: [vitePluginCopyAssets()],
   build: {
     target: 'node20',
     outDir: resolve(dirname, './dist/dist'),
@@ -24,7 +24,8 @@ export default {
       external: [...external, 'path', 'child_process', 'fs'],
       output: {
         entryFileNames: '[name].js'
-      }
+      },
+      plugins: [rollupPluginCopy()]
     },
     ssr: false,
     ssrManifest: false,
