@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.2.6",
+  "version": "1.2.7",
   "main": "dist/resources/electron/main.js",
   "author": {
     "name": "biaov",
@@ -45,25 +45,25 @@
   ],
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
-    "ant-design-vue": "^4.2.1",
+    "ant-design-vue": "^4.2.3",
     "axios": "^1.7.2",
     "dayjs": "^1.11.11",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "vue": "^3.4.31",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.14.10",
     "@types/nprogress": "^0.2.3",
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue": "^5.0.5",
     "electron": "25.1.1",
     "electron-builder": "24.4.0",
     "less": "^4.2.0",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.11",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
     "vite-plugin-electron": "^0.28.3",
     "vite-plugin-electron-renderer": "^0.14.5",
-    "vue-tsc": "^2.0.19"
+    "vue-tsc": "^2.0.26"
   }
 }
