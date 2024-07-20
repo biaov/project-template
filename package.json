@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.0.19",
+  "version": "1.0.21",
   "exports": "./dist/index.js",
   "main": "./dist/index.js",
   "type": "module",
@@ -55,13 +55,13 @@
     "commander": "^12.1.0",
     "log-symbols": "^6.0.0",
     "ora": "^8.0.1",
-    "update-notifier": "^7.0.0"
+    "update-notifier": "^7.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.10",
+    "@types/node": "^20.14.11",
     "@types/update-notifier": "^6.0.8",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "typescript": "^5.5.3",
-    "vite": "^5.3.3"
+    "vite": "^5.3.4"
   }
 }
