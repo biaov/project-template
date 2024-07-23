@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.1.32",
+  "version": "1.1.33",
   "main": "src/index.ts",
   "author": {
     "name": "biaov",
@@ -34,7 +34,7 @@
     "@types/express": "^4.17.21",
     "@types/node": "^20.14.11",
     "terser": "^5.31.3",
-    "typescript": "^5.5.3",
+    "typescript": "^5.5.4",
     "vite": "^4.5.2",
     "vite-plugin-node": "^3.1.0"
   }
