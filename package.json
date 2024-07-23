@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.2.9",
+  "version": "1.2.10",
   "main": "dist/resources/electron/main.js",
   "author": {
     "name": "biaov",
@@ -50,7 +50,7 @@
     "dayjs": "^1.11.12",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
-    "vue": "^3.4.32",
+    "vue": "^3.4.33",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
@@ -60,10 +60,10 @@
     "electron": "25.1.1",
     "electron-builder": "24.4.0",
     "less": "^4.2.0",
-    "typescript": "^5.5.3",
+    "typescript": "^5.5.4",
     "vite": "^5.3.4",
     "vite-plugin-electron": "^0.28.3",
     "vite-plugin-electron-renderer": "^0.14.5",
-    "vue-tsc": "^2.0.26"
+    "vue-tsc": "^2.0.28"
   }
 }
