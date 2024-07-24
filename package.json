@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.2.5",
+  "version": "1.2.6",
   "author": {
     "name": "biaov",
     "email": "biaov@qq.com",
@@ -49,14 +49,14 @@
     "dayjs": "^1.11.12",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
-    "vue": "^3.4.32",
+    "vue": "^3.4.33",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.11",
     "@types/nprogress": "^0.2.3",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -66,11 +66,11 @@
     "eslint-plugin-vue": "^9.27.0",
     "less": "^4.2.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.3",
+    "typescript": "^5.5.4",
     "unplugin-auto-import": "^0.18.0",
     "unplugin-vue-components": "^0.27.3",
     "vite": "^5.3.4",
     "vite-plugin-eslint": "^1.8.1",
-    "vue-tsc": "^2.0.26"
+    "vue-tsc": "^2.0.28"
   }
 }
