@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.2.22",
+  "version": "1.2.23",
   "scripts": {
     "start": "npm run dev:h5",
     "dev:app": "uni -p app",
@@ -11,7 +11,7 @@
     "build:h5": "uni build",
     "build:mp-weixin": "uni build -p mp-weixin",
     "lint": "eslint --fix ./src --ext .vue,.ts",
-    "update": "auto check -u && auto version++ && npm i && auto git 更新依赖版本"
+    "update": "auto check -u && auto version++ && npm i --forece && auto git 更新依赖版本"
   },
   "author": {
     "name": "biaov",
@@ -46,27 +46,27 @@
     }
   ],
   "dependencies": {
-    "@dcloudio/uni-app": "^2.0.2-4020420240722001",
-    "@dcloudio/uni-app-plus": "^2.0.2-4020420240722001",
+    "@dcloudio/uni-app": "^3.0.0-alpha-4020520240808001",
+    "@dcloudio/uni-app-plus": "^3.0.0-alpha-4020520240808001",
     "@dcloudio/uni-components": "^3.0.0-alpha-3000020210521001",
-    "@dcloudio/uni-h5": "^2.0.2-4020420240722001",
-    "@dcloudio/uni-mp-weixin": "^2.0.2-4020420240722001",
+    "@dcloudio/uni-h5": "^3.0.0-alpha-4020520240808001",
+    "@dcloudio/uni-mp-weixin": "^3.0.0-alpha-4020520240808001",
     "dayjs": "^1.11.12",
-    "pinia": "^2.1.7",
-    "vue": "^3.4.33",
+    "pinia": "^2.2.1",
+    "vue": "^3.4.37",
     "vue-i18n": "^9.13.1"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.12",
-    "@dcloudio/uni-automator": "^2.0.2-4020420240722001",
-    "@dcloudio/uni-cli-shared": "^2.0.2-4020420240722001",
-    "@dcloudio/uni-stacktracey": "^2.0.2-4020420240722001",
+    "@dcloudio/uni-automator": "^3.0.0-alpha-4020520240808001",
+    "@dcloudio/uni-cli-shared": "^3.0.0-alpha-4020520240808001",
+    "@dcloudio/uni-stacktracey": "^3.0.0-alpha-4020520240808001",
     "@dcloudio/vite-plugin-uni": "^3.0.0-alpha-3000020210521001",
-    "@types/node": "^20.14.11",
-    "@typescript-eslint/eslint-plugin": "^7.17.0",
-    "@typescript-eslint/parser": "^7.17.0",
-    "@vitejs/plugin-vue": "^5.0.5",
-    "eslint": "^9.7.0",
+    "@types/node": "^22.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "eslint": "^9.9.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
@@ -75,9 +75,9 @@
     "less": "^4.2.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
-    "unplugin-auto-import": "^0.18.0",
+    "unplugin-auto-import": "^0.18.2",
     "unplugin-vue-components": "^0.27.3",
-    "vite": "^5.3.4",
+    "vite": "^5.4.0",
     "vite-plugin-eslint": "^1.8.1"
   }
 }
