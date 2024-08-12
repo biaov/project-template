@@ -1,7 +1,7 @@
 {
   "name": "project-template",
   "private": false,
-  "version": "1.2.6",
+  "version": "1.2.7",
   "author": {
     "name": "biaov",
     "email": "biaov@qq.com",
@@ -45,19 +45,19 @@
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
     "ant-design-vue": "^4.2.3",
-    "axios": "^1.7.2",
+    "axios": "^1.7.3",
     "dayjs": "^1.11.12",
     "nprogress": "^0.2.0",
-    "pinia": "^2.1.7",
-    "vue": "^3.4.33",
-    "vue-router": "^4.4.0"
+    "pinia": "^2.2.1",
+    "vue": "^3.4.37",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
-    "@types/node": "^20.14.11",
+    "@types/node": "^22.2.0",
     "@types/nprogress": "^0.2.3",
-    "@typescript-eslint/eslint-plugin": "^7.17.0",
-    "@typescript-eslint/parser": "^7.17.0",
-    "@vitejs/plugin-vue": "^5.0.5",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "@vitejs/plugin-vue": "^5.1.2",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
@@ -67,10 +67,10 @@
     "less": "^4.2.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
-    "unplugin-auto-import": "^0.18.0",
+    "unplugin-auto-import": "^0.18.2",
     "unplugin-vue-components": "^0.27.3",
-    "vite": "^5.3.4",
+    "vite": "^5.4.0",
     "vite-plugin-eslint": "^1.8.1",
-    "vue-tsc": "^2.0.28"
+    "vue-tsc": "^2.0.29"
   }
 }
