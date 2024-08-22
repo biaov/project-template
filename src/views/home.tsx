@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { Popconfirm, Table, Tag, Button, Card } from 'antd'
 import type { ColumnsType } from 'antd/es/table'
 import store, { counterSlice } from '@/stores'
-import Styles from './index.module.less'
 
 interface DataType {
   key: string
@@ -107,7 +106,7 @@ const Home: React.FC = () => {
   ]
 
   return (
-    <div className={Styles.wrap}>
+    <div className="p-50">
       <Card
         title="演示列表"
         extra={

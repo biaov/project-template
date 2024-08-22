@@ -2,7 +2,6 @@ import React from 'react'
 import { Button, Card, Form, Input, Space } from 'antd'
 import { useNavigate } from 'react-router-dom'
 import store, { counterSlice } from '@/stores'
-import styles from './index.module.less'
 
 const Login: React.FC = () => {
   const navigate = useNavigate()
@@ -29,7 +28,7 @@ const Login: React.FC = () => {
   }
 
   return (
-    <div className={styles.wrap}>
+    <div className="w-screen h-screen flex justify-center items-center overflow-hidden bg-gradient-to-r from-cyan-500 to-blue-500">
       <Card title="登录" style={{ width: 500 }}>
         <Form {...formProps}>
           <Form.Item label="用户名" name="username" rules={[{ required: true, message: '请输入用户名' }]}>
