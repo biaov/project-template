@@ -1,9 +1,6 @@
-<style lang="less" scoped>
-@import './index.less';
-</style>
 <template>
-  <div class="wrap">
-    <a-card title="登录" class="card">
+  <div class="flex justify-center pt-100">
+    <a-card title="登录" class="w-500">
       <a-space direction="vertical">
         <img src="@/assets/template.svg" alt="" />
         <a-button type="primary" @click="onSubmit">提交</a-button>

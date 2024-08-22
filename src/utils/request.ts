@@ -1,6 +1,5 @@
 import axios, { AxiosRequestConfig, Canceler } from 'axios'
 import { message } from 'ant-design-vue'
-import { baseURL } from '@/config'
 
 /**
  * 等待请求
@@ -15,7 +14,7 @@ const cacelKey = 'requesting'
 /**
  * 移除等待请求
  */
-const removePendingAjax = (config: AxiosRequestConfig<any>, cancel?: Canceler) => {
+const removePendingAjax = (config: AxiosRequestConfig<unknown>, cancel?: Canceler) => {
   const params = typeof config.params === 'string' ? config.params : JSON.stringify(config.params)
   const data = typeof config.data === 'string' ? config.data : JSON.stringify(config.data)
   const url = (config.url as string) + config.method + params + data
@@ -32,7 +31,7 @@ const removePendingAjax = (config: AxiosRequestConfig<any>, cancel?: Canceler) =
  * 创建 axios 实例
  */
 export const service = axios.create({
-  baseURL,
+  baseURL: import.meta.env.VITE_BASE_URL,
   /**
    * 请求超时时间
    */

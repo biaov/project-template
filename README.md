@@ -52,36 +52,35 @@ npm run build
 
 #### dependencies
 
-- `@ant-design/icons-vue`: UI 框架图标
-- `ant-design-vue`: UI 框架
-- `axios`: 接口请求
-- `dayjs`: 时间处理工具
-- `nprogress`: 进度条
-- `pinia`: 状态管理器
-- `vue`: 前端框架
-- `vue-router`: 路由
+- `@ant-design/icons-vue`:
+- `ant-design-vue`:
+- `axios`:
+- `dayjs`:
+- `nprogress`:
+- `vue`:
+- `vue-router`:
 
 #### devDependencies
 
-- `@types/node`: `node` 的类型
-- `@types/nprogress`: `nprogress` 的类型
-- `@typescript-eslint/eslint-plugin`: 检测和修复 TS 代码
-- `@typescript-eslint/parser`: 解析 TS 代码并生成抽象语法树（AST），以供 eslint 进行代码检查
+- `@eslint/eslintrc`: eslint 识别自定义文件内容
+- `@eslint/js`: eslint 解析 js
+- `@types/node`: `node` 的类型声明
+- `@types/nprogress`: `nprogress` 的类型声明
 - `@vitejs/plugin-vue`: Vite 解析 Vue 文件
 - `eslint`: 代码检查工具
-- `eslint-config-airbnb-base`: airbnb-base 代码编写规范
-- `eslint-config-prettier`: 将 Prettier 规则集成到 ESlint 检查中
-- `eslint-plugin-import`: 检测和修复 JS 中的模块导入导出问题
 - `eslint-plugin-prettier`: 检测不符合 Prettier 格式的代码
 - `eslint-plugin-vue`: 检测和修复 Vue 代码
+- `globals`: 全局变量配置
 - `less`: CSS 预编译器
 - `prettier`: 代码格式化
+- `tailwindcss`: CSS 样式生成器
 - `typescript`: 编程语言
+- `typescript-eslint`: eslint 解析 ts
 - `unplugin-auto-import`: 自动引入模块，主要用于全局模块，如 `vue`
 - `unplugin-vue-components`: 自动引入并注册组件，主要用于全局组件，如 `src/components`
 - `vite`: 项目构建工具
 - `vite-plugin-eslint`: 将 ESlint 集成到 Vite 中
-- `vue-tsc`: 编译 TS 单文件 Vue 文件的工具
+
 
 ## 贡献者们
 

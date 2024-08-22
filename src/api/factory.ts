@@ -3,7 +3,7 @@ import { PagingResponse } from './types'
 
 export const restful = (path: string) => ({
   paging: (query = {}) => service.get(path, { params: query }) as Promise<PagingResponse>,
-  all: (query = {}) => service.get(path, { params: { ...query, all: true } }) as Promise<Record<string, any>[]>,
+  all: (query = {}) => service.get(path, { params: { ...query, all: true } }) as Promise<Record<string, unknown>[]>,
   get: (id: number) => service.get(`${path}/${id}`),
   create: (data = {}) => service.post(path, data),
   delete: (id: number) => service.delete(`${path}/${id}`),
@@ -12,6 +12,6 @@ export const restful = (path: string) => ({
 })
 
 export const command = (path: string) => ({
-  get: (query = {}) => service.get(path, { params: query }) as Promise<Record<string, any>>,
+  get: (query = {}) => service.get(path, { params: query }) as Promise<Record<string, unknown>>,
   post: (data = {}) => service.post(path, data)
 })
