@@ -63,6 +63,13 @@
     "createSSRApp": true,
     "onHide": true,
     "onLaunch": true,
-    "onLoad": true
+    "onLoad": true,
+    "ExtractDefaultPropTypes": true,
+    "ExtractPropTypes": true,
+    "ExtractPublicPropTypes": true,
+    "WritableComputedRef": true,
+    "onReachBottom": true,
+    "onReady": true,
+    "useStore": true
   }
 }

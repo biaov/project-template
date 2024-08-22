@@ -1,13 +1,11 @@
-<style scoped lang="less">
-@import './index.less';
-</style>
 <template>
-  <view class="wrap">
-    <image class="logo" src="/static/template.svg" />
-    <view class="space">版本：{{ packageInfo.version }}</view>
-    <button class="space" @click="onExit" v-if="store.token">退出登录</button>
-    <button class="space" @click="onNavToLogin" v-else>去登录</button>
-    <button @click="handleTest">测试请求</button>
+  <view class="flex flex-col items-center">
+    <image class="w-300" src="/static/template.svg" />
+
+    <button class="mb-40" @click="onExit" v-if="store.state.token">退出登录</button>
+    <button class="mb-40" @click="onNavToLogin" v-else>去登录</button>
+    <button class="mb-40" @click="handleTest">测试请求</button>
+    <view v-if="packageInfo.version">测试成功 版本：{{ packageInfo.version }}</view>
   </view>
 </template>
 

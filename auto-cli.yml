@@ -1,11 +1,3 @@
-reject: [
-  "pinia",
-  "@dcloudio/uni-components",
-  "@dcloudio/vite-plugin-uni",
-  "vite",
-  "@vitejs/plugin-vue",
-  "eslint"
-]
 resolve: [
   "@dcloudio/uni-app@vue3",
   "@dcloudio/uni-app-plus@vue3",
