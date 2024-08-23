@@ -1,5 +1,3 @@
-/// <reference path="./module.d.ts" />
-
 import updateNotifier from 'update-notifier'
 import chalk from 'chalk'
 import pkg from '../package.json'
