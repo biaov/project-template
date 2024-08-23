@@ -1,13 +1,25 @@
-import { defineConfig, UserConfigExport } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import eslint from 'vite-plugin-eslint'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
+import tailwindcss from 'tailwindcss'
 
-const config: UserConfigExport = {
+const spacing: Record<string, string> = {}
+
+Array.from({ length: 1000 }, (_, i) => {
+  spacing[i] = `${i}px`
+})
+
+const env = loadEnv('development', './')
+
+export default defineConfig({
   plugins: [
-    eslint(),
+    eslint({
+      lintOnStart: true,
+      exclude: ['node_modules', 'dist']
+    }),
     vue(),
     autoImport({
       imports: ['vue', 'vue-router'],
@@ -32,10 +44,9 @@ const config: UserConfigExport = {
     port: 8090,
     proxy: {
       '/api': {
-        // target:'http://desktop.biaov.cn'
-        target: 'http://127.0.0.1:3500',
+        target: env.VITE_PROXY_BASE_URL,
         changeOrigin: true,
-        rewrite: path => path.replace(/^\/api/, '/api/')
+        rewrite: path => path.replace(/^\/api/, '')
       }
     }
   },
@@ -49,10 +60,25 @@ const config: UserConfigExport = {
     // 配置预编译器
     preprocessorOptions: {
       less: {
-        additionalData: `@import '@/styles/variable.less';`
+        additionalData: `@import '@/styles/vars.less';`
       }
+    },
+    postcss: {
+      plugins: [
+        tailwindcss({
+          content: ['./src/**/*.vue'],
+          theme: {
+            spacing,
+            extend: {
+              fontSize: ({ theme }) => theme('spacing'),
+              borderRadius: ({ theme }) => theme('spacing')
+            }
+          },
+          corePlugins: {
+            preflight: false
+          }
+        })
+      ]
     }
   }
-}
-
-export default defineConfig(config)
+})

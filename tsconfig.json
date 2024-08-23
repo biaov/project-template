@@ -8,7 +8,7 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
-    "types": ["node"],
+    "types": ["node", "vite/client"],
     "skipLibCheck": true,
     "noEmit": true,
     "baseUrl": "./",

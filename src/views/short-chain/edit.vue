@@ -1,8 +1,5 @@
-<style lang="less" scoped>
-@import './edit.less';
-</style>
 <template>
-  <a-row class="default-page" justify="center">
+  <a-row justify="center">
     <a-card title="新增短链" class="w-700">
       <a-form v-bind="cols">
         <a-form-item label="短链内容" v-bind="validateInfos.content">

@@ -1,6 +1,6 @@
 import App from '@/App.vue'
 import plugins from '@/plugins'
-import '@/styles/index.less'
+import '@/styles/reset.less'
 
 const app = createApp(App)
 app.use(plugins)
