@@ -1,12 +1,10 @@
-import { baseURL } from '@/config'
-
 const request = (option: UniApp.RequestOptions) => {
   const config = {
     sslVerify: false,
     dataType: 'json',
     timeout: 100000,
     ...option,
-    url: baseURL + option.url
+    url: import.meta.env.VITE_BASE_URL + option.url
   }
   return new Promise((resolve, reject) => {
     uni.request({

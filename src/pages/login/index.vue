@@ -1,9 +1,6 @@
-<style scoped lang="less">
-@import './index.less';
-</style>
 <template>
-  <view class="wrap">
-    <image class="logo" src="/static/template.svg" />
+  <view class="flex flex-col items-center">
+    <image class="w-300" src="/static/template.svg" />
     <button @click="onLogin">登录</button>
   </view>
 </template>

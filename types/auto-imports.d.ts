@@ -33,6 +33,8 @@ declare global {
   const onLaunch: typeof import('@dcloudio/uni-app')['onLaunch']
   const onLoad: typeof import('@dcloudio/uni-app')['onLoad']
   const onMounted: typeof import('vue')['onMounted']
+  const onReachBottom: typeof import('@dcloudio/uni-app')['onReachBottom']
+  const onReady: typeof import('@dcloudio/uni-app')['onReady']
   const onRenderTracked: typeof import('vue')['onRenderTracked']
   const onRenderTriggered: typeof import('vue')['onRenderTriggered']
   const onScopeDispose: typeof import('vue')['onScopeDispose']
@@ -58,6 +60,7 @@ declare global {
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
   const useSlots: typeof import('vue')['useSlots']
+  const useStore: typeof import('../src/stores/index')['useStore']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
   const watchPostEffect: typeof import('vue')['watchPostEffect']
@@ -66,5 +69,6 @@ declare global {
 // for type re-export
 declare global {
   // @ts-ignore
-  export type { Component, ComponentPublicInstance, ComputedRef, InjectionKey, PropType, Ref, VNode } from 'vue'
+  export type { Component, ComponentPublicInstance, ComputedRef, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, VNode, WritableComputedRef } from 'vue'
+  import('vue')
 }

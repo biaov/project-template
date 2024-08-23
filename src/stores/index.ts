@@ -1,4 +1,3 @@
-import { defineStore } from 'pinia'
 import { setStorage, getStorage, removeStorage } from '@/utils/storage'
 import { LoginData } from './types'
 
@@ -7,27 +6,28 @@ import { LoginData } from './types'
  */
 const tokenStorage = getStorage('token') as string
 
-export const useStore = defineStore('main', {
-  state: () => ({
-    /**
-     * 登录状态
-     */
-    token: tokenStorage
-  }),
-  actions: {
-    /**
-     * 登录
-     */
-    login({ token }: LoginData) {
-      this.token = token
-      setStorage('token', token)
-    },
-    /**
-     * 登出
-     */
-    logout() {
-      this.token = ''
-      removeStorage('token')
-    }
-  }
+const state = reactive({
+  /**
+   * 登录状态
+   */
+  token: tokenStorage
 })
+
+export const useStore = () => {
+  /**
+   * 登录
+   */
+  const login = ({ token }: LoginData) => {
+    state.token = token
+    setStorage('token', token)
+  }
+  /**
+   * 登出
+   */
+  const logout = () => {
+    state.token = ''
+    removeStorage('token')
+  }
+
+  return { state: readonly(state), login, logout }
+}
