@@ -1,5 +1,5 @@
 import { useRouter } from 'vue-router'
-import { useStore } from '@/stores'
+import { useStore } from '@/store'
 
 /**
  * 操作

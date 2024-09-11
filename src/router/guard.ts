@@ -1,4 +1,4 @@
-import { useStore } from '@/stores'
+import { useStore } from '@/store'
 import NProgress from 'nprogress'
 import type { RouteLocationNormalized } from 'vue-router'
 
@@ -8,7 +8,7 @@ import type { RouteLocationNormalized } from 'vue-router'
 export const beforeEach = ({ name }: RouteLocationNormalized) => {
   NProgress.start()
   const store = useStore()
-  if (store.token) {
+  if (store.state.token) {
     return name !== 'login' || { name: 'dashboard' }
   } else {
     return name === 'login' || { name: 'login' }
