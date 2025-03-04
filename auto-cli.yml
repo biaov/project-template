@@ -1,1 +1,2 @@
-resolve: ["eslint-plugin-react-hooks@next"]
+resolve: ['eslint-plugin-react-hooks@next']
+reject: ['vite', 'typescript']
