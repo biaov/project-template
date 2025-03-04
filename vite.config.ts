@@ -4,18 +4,13 @@ import { resolve } from 'path'
 import eslint from 'vite-plugin-eslint'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
-import tailwindcss from 'tailwindcss'
-
-const spacing: Record<string, string> = {}
-
-Array.from({ length: 1000 }, (_, i) => {
-  spacing[i] = `${i}px`
-})
+import tailwindcss from '@tailwindcss/vite'
 
 const env = loadEnv('development', './')
 
 export default defineConfig({
   plugins: [
+    tailwindcss(),
     eslint({
       lintOnStart: true,
       exclude: ['node_modules', 'dist']
@@ -62,23 +57,6 @@ export default defineConfig({
       less: {
         additionalData: `@import '@/styles/vars.less';`
       }
-    },
-    postcss: {
-      plugins: [
-        tailwindcss({
-          content: ['./src/**/*.vue'],
-          theme: {
-            spacing,
-            extend: {
-              fontSize: ({ theme }) => theme('spacing'),
-              borderRadius: ({ theme }) => theme('spacing')
-            }
-          },
-          corePlugins: {
-            preflight: false
-          }
-        })
-      ]
     }
   }
 })
