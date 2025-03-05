@@ -70,6 +70,14 @@
     "WritableComputedRef": true,
     "onReachBottom": true,
     "onReady": true,
-    "useStore": true
+    "useStore": true,
+    "DirectiveBinding": true,
+    "LoginData": true,
+    "MaybeRef": true,
+    "MaybeRefOrGetter": true,
+    "onWatcherCleanup": true,
+    "useId": true,
+    "useModel": true,
+    "useTemplateRef": true
   }
 }
