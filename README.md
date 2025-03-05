@@ -15,7 +15,7 @@
 - 关于 `Vue` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/vue"><img src="https://img.shields.io/badge/version-v1.3.1-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/vue"><img src="https://img.shields.io/badge/version-v1.3.5-blue" alt="版本" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/vue/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/vue/.eslintrc.js"><img src="https://img.shields.io/badge/eslint-prettier-blue?logo=eslint" alt="eslint" /></a>
 </h2>
@@ -64,6 +64,7 @@ npm run build
 
 - `@eslint/eslintrc`: eslint 识别自定义文件内容
 - `@eslint/js`: eslint 解析 js
+- `@tailwindcss/vite`: tailwindcss 插件
 - `@types/node`: `node` 的类型声明
 - `@types/nprogress`: `nprogress` 的类型声明
 - `@vitejs/plugin-vue`: Vite 解析 Vue 文件
@@ -80,7 +81,6 @@ npm run build
 - `unplugin-vue-components`: 自动引入并注册组件，主要用于全局组件，如 `src/components`
 - `vite`: 项目构建工具
 - `vite-plugin-eslint`: 将 ESlint 集成到 Vite 中
-
 
 ## 贡献者们
 
