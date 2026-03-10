@@ -45,24 +45,11 @@ npm run build
 
 ### 技术栈
 
-- `Vite` + `TS` + `Node` + `Express` + `sequelize` + `mysql`
+- `Vite` + `TS` + `Node` + `typeorm` + `nestjs` + `mysql`
 
-### 依赖特性
+## 示例
 
-#### dependencies
-
-- `express`: Node 开发框架
-- `mysql2`: mysql 数据库
-- `sequelize`: 一个基于 promise 的 Node.js ORM 工具
-
-#### devDependencies
-
-- `@types/express`: `express` 的类型
-- `@types/node`: `node` 的类型
-- `terser`: 压缩代码
-- `typescript`: 编程语言
-- `vite`: 项目构建工具
-- `vite-plugin-node`: vite 插件，开启 Node.js 服务器
+- [ecosystem](https://github.com/biaov/ecosystem/tree/main/server)
 
 ## 贡献者们
 
