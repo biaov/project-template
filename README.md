@@ -15,7 +15,7 @@
 - 关于 `electron` 项目的模板
 
 <h2 align="center">
-  <a href="https://gitee.com/biaovorg/project-template/tree/electron"><img src="https://img.shields.io/badge/version-v1.2.13-blue" alt="版本" /></a>
+  <a href="https://gitee.com/biaovorg/project-template/tree/electron"><img src="https://img.shields.io/badge/version-v1.3.4-blue" alt="版本" /></a>
   <a href="https://gitee.com/biaovorg/project-template/blob/electron/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license" /></a>
 </h2>
 
@@ -62,6 +62,7 @@ npm run build
 
 #### devDependencies
 
+- `@tailwindcss/vite`: Vite 使用 Tailwindcss 插件
 - `@types/node`: `node` 的类型
 - `@types/nprogress`: `nprogress` 的类型
 - `@vitejs/plugin-vue`: Vite 解析 Vue 文件
