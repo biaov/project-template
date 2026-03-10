@@ -3,24 +3,9 @@ import type { InlineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import electron from 'vite-plugin-electron/simple'
-import tailwindcss from 'tailwindcss'
+import tailwindcss from '@tailwindcss/vite'
 import components from 'unplugin-vue-components/vite'
 import autoImport from 'unplugin-auto-import/vite'
-
-const spacing: Record<string, string> = {}
-
-Array.from({ length: 1000 }, (_, i) => {
-  spacing[i] = `${i}px`
-})
-
-const theme = {
-  white: '#fff',
-  primary: '#409eff',
-  success: '#67c23a',
-  info: '#909399',
-  warning: '#e6a23c',
-  danger: '#f56c6c'
-}
 
 const sameViteConfig: InlineConfig = {
   resolve: {
@@ -43,21 +28,22 @@ const electronBuild: InlineConfig = {
 export default defineConfig({
   base: './',
   plugins: [
+    tailwindcss(),
     vue(),
-    electron({
-      main: {
-        entry: 'electron/main.ts',
-        vite: {
-          ...sameViteConfig,
-          ...electronBuild
-        }
-      },
-      preload: {
-        input: resolve(__dirname, 'electron/preload.ts'),
-        vite: electronBuild
-      },
-      renderer: {}
-    }),
+    // electron({
+    //   main: {
+    //     entry: 'electron/main.ts',
+    //     vite: {
+    //       ...sameViteConfig,
+    //       ...electronBuild
+    //     }
+    //   },
+    //   preload: {
+    //     input: resolve(__dirname, 'electron/preload.ts'),
+    //     vite: electronBuild
+    //   },
+    //   renderer: {}
+    // }),
     autoImport({
       // 依赖自动加载
       imports: [
@@ -93,24 +79,6 @@ export default defineConfig({
       less: {
         additionalData: `@import '@/styles/vars.less';`
       }
-    },
-    postcss: {
-      plugins: [
-        tailwindcss({
-          content: ['./src/**/*.vue'],
-          theme: {
-            spacing,
-            extend: {
-              fontSize: ({ theme }) => theme('spacing'),
-              borderRadius: ({ theme }) => theme('spacing'),
-              colors: theme
-            }
-          },
-          corePlugins: {
-            preflight: false
-          }
-        })
-      ]
     }
   },
   build: {
