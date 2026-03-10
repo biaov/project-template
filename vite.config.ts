@@ -1,7 +1,7 @@
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
-import eslint from 'vite-plugin-eslint'
+import eslint from 'vite-plugin-eslint2'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
 import tailwindcss from '@tailwindcss/vite'
@@ -41,7 +41,7 @@ export default defineConfig({
       '/api': {
         target: env.VITE_PROXY_BASE_URL,
         changeOrigin: true,
-        rewrite: path => path.replace(/^\/api/, '')
+        rewrite: path => path.replace(/^\/api/, '/api')
       }
     }
   },
