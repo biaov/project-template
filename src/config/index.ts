@@ -1,9 +1,22 @@
 /**
- * 端口号
+ * 初始化分页参数
  */
-export const port = 3500
+export const initPage = {
+  current: 1,
+  pageSize: 10
+}
 
 /**
- * 路由前缀
+ * 默认密码
  */
-export const baseURL = '/api'
+export const defaultPwd = '123456'
+
+/**
+ * 默认头像
+ */
+export const defaultAvatar = 'https://ecosystem.biaov.cn/uploads/default-avatar.png'
+
+/**
+ * redis 有效期, 单位: 分钟
+ */
+export const redisExpire = 5
